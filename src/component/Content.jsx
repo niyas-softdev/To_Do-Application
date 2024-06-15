@@ -111,7 +111,7 @@ function Content() {
         >
           <h1>My Tasks</h1>
 
-          <div className="inputcontent d-flex w-100 my-3">
+          <div className="inputcontent px-5 d-flex w-100 my-3">
             <Form.Control
               type="text"
               className="rounded-pill"
@@ -127,7 +127,7 @@ function Content() {
             </Button>
           </div>
 
-          <div className="tasklist w-100">
+          <div className="tasklist w-100 px-3">
             <ul className="list-unstyled">
               {Tasks.map((task) => (
                 <li

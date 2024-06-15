@@ -23,7 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+  background: linear-gradient(135deg, #ffa64d, #ff4d4d); /* Gradient with vibrant colors */
   padding: 20px;
   box-sizing: border-box;
   width: 100%; /* Ensure full width */
@@ -31,18 +31,24 @@ body {
   min-height: 100vh; /* Ensure it takes full viewport height */
 }
 
-.profpic {
+.leftcontent .profpic {
   padding: 10px;
   height: 150px;
   width: 150px;
+  border: 5px solid #fff; /* White border around profile picture */
+  border-radius: 50%; /* Circular profile picture */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for profile picture */
 }
 
+
+/* Additional Styling for Left Content */
 .leftcontent h1 {
-  font-size: 28px;
-  color: #444;
-  margin: 20px 0;
-  text-align: center;
+  font-size: 32px;
+  color: #fff; /* Text color */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Text shadow for better readability */
 }
+
 
 .taskimg {
   width: 80%;
@@ -57,11 +63,10 @@ body {
   align-items: center;
   padding: 40px 20px;
   overflow-y: auto;
-  background: linear-gradient(135deg, #f9f9f9, #ececec);
+  background: linear-gradient(135deg, #66ccff, #cc99ff);
   box-sizing: border-box;
   width: calc(100% - 400px); /* Adjusted for right content width */
   min-height: 100vh; /* Ensure it takes full viewport height */
-  max-width: calc(100% - 400px); /* Adjusted for right content width */
 }
 
 .rightcontent h1 {

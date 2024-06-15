@@ -1,45 +1,83 @@
-.signcontent{
+.signcontent {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background: linear-gradient(-45deg, #ff6f61, #de4dff, #4dffae, #61a7ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
-.signdiv{
-    width: 500px;
-    height: 500px;
-    box-shadow: 0px 0px 10px gray;
+.signdiv {
+    width: 90%; /* Use a percentage or max-width for responsiveness */
+    max-width: 500px; /* Limit maximum width */
+    margin: 20px; /* Add margin for spacing */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-}
-
-button{
-   display: flex;
-   align-items: center;
-   width: 350px;
-   justify-content: center;
-   height: 40px;
-   box-shadow: 5px 3px gray;
-   border-radius: 10px;
-   border: none;
-   background-color: darksalmon;
-
-
-}
-
-button:hover{
-    box-shadow: 5px 5px gray ;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
+.signdiv:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.5);
+}
 
-.google{
+.signdiv img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%; /* Ensure image fits within container */
+    margin-bottom: 20px;
+}
+
+
+.signdiv img:hover {
+    transform: scale(1.05); /* slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* more pronounced shadow on hover */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 350px; /* Limit maximum width */
+    justify-content: center;
+    height: 40px;
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #ff4c3b;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.google {
     height: 30px;
     width: 30px;
+margin-top: 20px;
+    margin-right: 10px; /* spacing between the icon and text */
 }
+
